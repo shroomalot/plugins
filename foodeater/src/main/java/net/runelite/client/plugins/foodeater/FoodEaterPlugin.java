@@ -71,7 +71,7 @@ public class FoodEaterPlugin extends Plugin {
             for (WidgetItem item : inventory.getWidgetItems()) {
                 final String name = this.itemManager.getItemComposition(item.getId()).getName();
 
-                if (name.equalsIgnoreCase(this.config.foodToEat())) {
+                if (name.equalsIgnoreCase(this.config.foodToEat1 or this.config.foodToEat2())) {
                     MenuEntry entry = getConsumableEntry(name, item.getId(), item.getIndex());
                     clientThread.invoke(() ->
                             client.invokeMenuAction(
