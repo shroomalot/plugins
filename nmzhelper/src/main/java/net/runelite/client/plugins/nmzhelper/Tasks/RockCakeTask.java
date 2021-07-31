@@ -46,7 +46,7 @@ public class RockCakeTask extends Task {
 
         if (inventoryWidget.getWidgetItems()
                 .stream()
-                .filter(item -> item.getId() == ItemID.DWARVEN_ROCK_CAKE_7509)
+                .filter(item -> item.getId() == ItemID.DWARVEN_ROCK_CAKE_7510)
                 .collect(Collectors.toList()).isEmpty())
             return false;
 
@@ -78,7 +78,7 @@ public class RockCakeTask extends Task {
 
         List<WidgetItem> items = inventoryWidget.getWidgetItems()
                 .stream()
-                .filter(item -> item.getId() == ItemID.DWARVEN_ROCK_CAKE_7509)
+                .filter(item -> item.getId() == ItemID.DWARVEN_ROCK_CAKE_7510)
                 .collect(Collectors.toList());
 
         if (items == null || items.isEmpty()) {
